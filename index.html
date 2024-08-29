@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Anomaly</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="animated-bg"></div>
+    <div id="emoji-container"></div>
+
+    <div id="splash-screen" class="container flex-col">
+        <div id="love-logo" class="cursor-pointer mb-4">❤️</div>
+        <p id="click-me" class="opacity-0">Click me!</p>
+    </div>
+
+    <div id="welcome-screen" class="container">
+        <div class="welcome-content">
+            <h4 class="welcome-message text-5xl mb-8 text-glow fade-in-up"></h4>
+            <div class="interactive-hearts">
+                <div class="heart" data-color="#ff69b4"></div>
+                <div class="heart" data-color="#ff1493"></div>
+                <div class="heart" data-color="#ff6347"></div>
+            </div>
+            <p class="text-2xl mb-8 fade-in-up">Touch the hearts to begin the journey</p>
+            <button id="start-button" class="hidden-button">
+                <span>Start</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="message-zero" class="container">
+        <div class="text-wrapper">
+            <p class="typing-text text-2xl">Hi anomaly, I just want to tell you about my strange feeling lol.</p>
+        </div>
+    </div>
+
+    <div id="message-one" class="container">
+        <div class="text-wrapper">
+            <p class="typing-text text-2xl">So please read it carefully, because I really want to share my feelings with you.</p>
+        </div>
+    </div>
+
+    <div id="message-one-five" class="container">
+        <div class="text-wrapper">
+            <p class="typing-text text-2xl">Honestly, I have no idea... why I'm feeling this way...</p>
+        </div>
+    </div>
+    <div id="message-two" class="container">
+        <div class="text-wrapper">
+            <p class="typing-text">I'm so lost... how did I even end up feeling this way? I have no clue what's going on or what to do about it... it's all just really confusing me</p>
+        </div>
+    </div>
+
+    <div id="message-three" class="container">
+        <div class="text-wrapper">
+            <p>Therefore, I need to understand first what I'm actually feeling. Is this love? But what
+                if it's not? </p>
+        </div>
+    </div>
+    <div id="message-three" class="container">
+        <div class="text-wrapper">
+            <p>What if I'm just attracted, and these feelings aren't real love? </p>
+        </div>
+    </div>
+    <div id="message-three" class="container">
+        <div class="text-wrapper">
+            <p>Maybe I'm just really into you, but is that actually love? Let's find out.</p>
+        </div>
+    </div>
+
+    <div id="movie-story-1" class="container image-container" data-bg-image="img/image1.webp">
+        <div class="image-overlay">
+            <div class="text-container">
+                <p class="text-justify movie-text">
+                    What I'm experiencing right now is this: I want you. I mean, I want you around all the time. It seems like being with you makes everything better. But could this be true love? No, it can't be.
+                    <span class="line-break"></span>
+                    You feel like someone special to me. This is real! Even in my current state of disinterest with everyone else, I find myself hoping for messages from you. I feel a great sense of joy during our interactions. But once again, is this what love actually is? No, not entirely. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-four" class="container">
+        <div class="text-wrapper">
+            <p class="typing-text">I honestly don't understand what's happening. I'm feeling lost. Could it really be that I'm in love?</p>
+        </div>
+    </div>
+
+    <div id="movie-story-2" class="container image-container" data-bg-image="img/image2.webp">
+        <div class="image-overlay">
+            <div class="text-container">
+                <p class="text-justify movie-text">
+                    Elaine Hatfield, in her 1978 book "A New Look at Love," describes two types of love: Passionate and Companionate, where Passionate love involves strong physical attraction, a desire to spend time together, and intense, deep emotions, and Companionate love includes emotional closeness, trust, and profound mutual respect, often seen in long-term relationships where partners support each other and have a strong commitment.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="message-five" class="container">
+        <div class="text-wrapper">
+            <p class="typing-text">Ah, I've come to understand my feelings at this point!</p>
+        </div>
+    </div>
+
+    <div id="movie-story-3" class="container image-container" data-bg-image="img/image3.webp">
+        <div class="image-overlay">
+            <div class="text-container">
+                <p class="text-justify movie-text">
+                    So, am I really feeling love? It seems like I'm in that passionate love phase, which can be fleeting, but if the relationship works out well, it might turn into a more lasting connection. Hmmm so, would you like to build that kind of lasting love with me?
+                    <span class="line-break"></span>
+                    To clarify, am I in love? Yes, I am. I'm in love with you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="end-message" class="container">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="end-message">
+            <p class="text-xl text-glow fade-in-up">" I'd wanna hold you just for a while</p>
+            <p class="text-xl text-glow fade-in-up">And die with a smile</p>
+            <p class="text-xl text-glow fade-in-up">If the world was ending</p>
+            <p class="text-xl text-glow fade-in-up">I'd wanna be next to you. "</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
+</body>
+
+</html>
